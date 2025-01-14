@@ -47,13 +47,7 @@ VulFix-Ollama 是一款专为渗透测试工程师打造的 Burp Suite 插件。
 5. 获取专业的修复建议  
 
 ## 📝 使用示例  
-
-<details>  
-<summary>点击查看界面预览</summary>  
-
 <img src="screenshot.png" alt="VulFix-Ollama 界面预览" width="600"/>  
-
-</details>  
 
 ## ⚠️ 注意事项  
 
