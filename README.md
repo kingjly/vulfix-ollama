@@ -2,11 +2,9 @@
 
 <div align="center">  
 
-<img src="screenshot.png" alt="VulFix-Ollama 界面预览" width="600"/>  
-
 [![Java](https://img.shields.io/badge/Java-8+-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.java.com/)  
-[![Burp Suite](https://img.shields.io/badge/BurpSuite-2023+-FF6633?style=flat-square&logo=burp-suite&logoColor=white)](https://portswigger.net/burp)  
-[![Ollama](https://img.shields.io/badge/Ollama-0.1.20+-00ADD8?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAbwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAERSURBVDiNrdK/K4VhHMfx1+HIYrHczWCxKZvBYDJabP4CuQaDRRaDQX4UymCQyXKnbAYWIYvBYJB/QIqU17k9x+k5B9/1dJ7v5/t+Puf7/T7PqURRpBmtmMIm+lCNa5zgBlFZjKg4gjG8YQNzGEIvutGPeaxjD+9JjfJEHuIZK+j4Q9yOSaxiPznjn4gbuMPcP8R/sYBDPOEkjViDOwz8V/yFeWzjEefxQjVucYhO1KV6qvCILTSgA6dRFEXYwzxqsYTFuO8Nh2jGLNbwiNsYcB4/0vkfWEd7yj6KLXQlwk8MJ/bfMYkRXGIGbYmLVKMvjp3gKqkgHWcYx0X8/ZrEWcJpPOAF4z+9QhL/ACeaNkjDqTX7AAAAAElFTkSuQmCC)](https://ollama.ai)  
+[![Burp Suite](https://img.shields.io/badge/BurpSuite-2023+-FF6633?style=flat-square&logo=burp&logoColor=white)](https://portswigger.net/burp)  
+[![Ollama](https://img.shields.io/badge/Ollama-0.5.5-00ADD8?style=flat-square)](https://ollama.ai)  
 
 _🤖 让漏洞修复建议生成更简单_  
 
@@ -51,17 +49,9 @@ VulFix-Ollama 是一款专为渗透测试工程师打造的 Burp Suite 插件。
 ## 📝 使用示例  
 
 <details>  
-<summary>点击展开查看示例</summary>  
+<summary>点击查看界面预览</summary>  
 
-1. **SQL 注入漏洞**  
-   - 输入漏洞名称  
-   - 获取完整的修复方案  
-   - 一键复制到报告中  
-
-2. **XSS 跨站脚本**  
-   - 描述具体场景  
-   - 生成针对性建议  
-   - 包含代码示例  
+<img src="screenshot.png" alt="VulFix-Ollama 界面预览" width="600"/>  
 
 </details>  
 
