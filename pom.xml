@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<project xmlns="http://maven.apache.org/POM/4.0.0"  
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+    <modelVersion>4.0.0</modelVersion>  
+
+    <groupId>com.vulfix</groupId>  
+    <artifactId>vulfix-ollama</artifactId>  
+    <version>1.0-SNAPSHOT</version>  
+
+    <properties>  
+        <maven.compiler.source>8</maven.compiler.source>  
+        <maven.compiler.target>8</maven.compiler.target>  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+    </properties>  
+
+    <dependencies>  
+        <!-- Burp Suite API -->  
+        <dependency>  
+            <groupId>net.portswigger.burp.extender</groupId>  
+            <artifactId>burp-extender-api</artifactId>  
+            <version>2.3</version>  
+        </dependency>  
+        
+        <!-- JSON Library -->  
+        <dependency>  
+            <groupId>org.json</groupId>  
+            <artifactId>json</artifactId>  
+            <version>20231013</version>  
+        </dependency>  
+    </dependencies>  
+
+    <build>  
+        <plugins>  
+            <!-- 跳过默认jar包的生成 -->  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-jar-plugin</artifactId>  
+                <version>3.2.0</version>  
+                <executions>  
+                    <execution>  
+                        <id>default-jar</id>  
+                        <phase>none</phase>  
+                    </execution>  
+                </executions>  
+            </plugin>  
+
+            <!-- 使用assembly插件生成包含依赖的jar包 -->  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-assembly-plugin</artifactId>  
+                <version>3.3.0</version>  
+                <configuration>  
+                    <descriptorRefs>  
+                        <descriptorRef>jar-with-dependencies</descriptorRef>  
+                    </descriptorRefs>  
+                    <finalName>vulfix-ollama</finalName>  
+                    <appendAssemblyId>false</appendAssemblyId>  
+                </configuration>  
+                <executions>  
+                    <execution>  
+                        <id>make-assembly</id>  
+                        <phase>package</phase>  
+                        <goals>  
+                            <goal>single</goal>  
+                        </goals>  
+                    </execution>  
+                </executions>  
+            </plugin>  
+        </plugins>  
+    </build>  
+</project>
